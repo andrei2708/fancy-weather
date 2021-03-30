@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>fancy-weather</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="left-buttons">
+        <button class="refresh-btn">
+        <img src="/images/Vector.svg" alt="">
+        </button>
+        <button class="lang-btn" ></button>
+        <button class="f-btn"></button>
+        <button class="c-btn"></button>
+      </div>
+      <div class="search-field">
+        <form>
+          <input type="text" placeholder="">
+          <button type="submit"></button>
+        </form>
+      </div>    
+    </div>
+  </header>
+
+  <main>
+    <section class="weather">
+      <div class="date-location">
+        <div class="location">
+          <h1 class="city"></h1>
+        </div>
+        <div class="data-container">
+          <p class="date-today">Mon 28 October</p>
+          <p class="time-today">0:00</p>
+        </div>
+      </div>
+      <div class="weather-conteiner">
+        <div class="weather-content">
+            <img src="/images/Group 26.svg" alt="">
+            <p class="temp">0</p>
+            <div class="overcast">
+              <p>overcast</p>
+              <p class="feels-like">Feels like: </p>
+              <p class="wind">Wind: </p>
+              <p class="humidity">Humidity: </p>
+            </div>
+        </div>
+        <div class="weather-days">
+            <div class="day1"></div>
+            <div class="day1"></div>
+            <div class="day1"></div>
+        </div>
+      </div>
+    </section>
+    <section class="map-container">
+      <div class="map"></div>
+      <div class="coordinates">
+        <p>Latitude: 53°54'<br>
+          Longitude: 27°34'
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+body {
+  position: relative;
+  margin: 0 auto;
+  background: linear-gradient(180deg,rgba(8,15,26,.59)
+  ,rgba(17,17,46,.46)) 50% fixed,
+  url('/images/bg\ 3.svg') no-repeat 50% fixed;
+  background-size: cover;
+  margin-top: 0px;
+
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 1260px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.left-buttons {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.refresh-btn {
+  border: none;
+  background: none;
+  width: 44px;
+  height: 44px;
+  background-image: url('/images/refresh.svg');
+  margin-right: 10px;
+}
+
+.lang-btn {
+  border: none;
+  width: 71px;
+  height: 44px;
+  background: rgba(174, 181, 185, 0.5);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.f-btn {
+  border: none;
+  width: 44px;
+  height: 44px;
+  background: rgba(76, 82, 85, 0.4);
+  border-radius: 5px 0 0 5px;
+}
+
+.c-btn {
+  border: none;
+  width: 44px;
+  height: 44px;
+  background: rgba(174, 181, 185, 0.5);
+  border-radius: 0 5px 5px 0;
+}
+
+form {
+  position: relative;
+  width: 375px;
+  height: 44px;
+}
+
+form input {
+  position: absolute;
+  width: 274px;
+  height: 44px;
+  background: rgba(76, 82, 85, 0.4);
+  border: 1px solid rgba(228, 227, 227, 0.2);
+  box-sizing: border-box;
+}
+
+form button {
+  position: absolute;
+  right: 1px;
+  border: none;
+  width: 100px;
+  height: 44px;
+  background: rgba(174, 181, 185, 0.5);
+  border-radius: 0 5px 5px 0;
+}
+
+main {
+  margin: 0 auto;
+  width: 1260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+h1 {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 55px;
+}
+.data-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.data-container p {
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-right: 15px;
+}
+
+.weather-content {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.weather-content img {
+  position: absolute;
+  top: 185px;
+  left: 390px;
+}
+
+.weather-content p {
+  margin-top: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 306px;
+  line-height: 373px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.overcast {
+  position: absolute;
+  left: 385px;
+  top: 340px;
+}
+
+.overcast p {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 105px;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  background-image: url('/images/google.svg');
+  width: 380px;
+  height: 380px;
+  margin-top: 160px;
+}
+
+.coordinates {
+width: 375px;
+height: 53px;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+text-align: right;
+text-transform: capitalize;
+color: #FFFFFF;
+}
