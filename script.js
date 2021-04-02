@@ -1,25 +1,22 @@
-let clockToday = document.querySelector(".time-today");
 let dateToday = document.querySelector(".date-today");
+let nextDay = document.querySelector(".name-day");
 
-function clock() {
-  /*let time = new Date();
-  let hours = time.getHours().toString();
-  let minutes = time.getMinutes().toString();
-  if(hours.length < 2) {
-    hours = '0' + hours;
-  }
-  if(minutes.length < 2) {
-    minutes = '0' + minutes;
-  }
-  let clockString = hours + ':' + minutes;*/
-  let clockString = new Date().toLocaleString('en', { hour: '2-digit', minute: '2-digit'});
-  clockToday.textContent = clockString;
-}
-clock();
+window.onload = function(){
+  window.setInterval(function(){
+    let now = new Date().toLocaleTimeString();
+    let clock = document.querySelector(".time-today");
+    clock.innerHTML = now;
+  }, 1000);
+ };
 
 function dateDay () {
-  let d = new Date().toLocaleString('en', { weekday: 'short', day: 'numeric', month: 'long'});
+  let d = new Date().toLocaleString('en', { weekday: 'short', month: 'long', day: 'numeric'});
    dateToday.textContent = d;
 }
 dateDay();
 
+function nextDateDay () {
+  let n = new Date().toLocaleString('en', {weekday: "long"});
+  nextDay.textContent = n;
+}
+nextDateDay();
