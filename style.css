@@ -181,9 +181,14 @@ main {
   justify-content: space-between;
 }
 
+.location {
+  display: flex;
+  flex-direction: row;
+}
 
 
-h1 {
+h1,
+.country {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
@@ -194,6 +199,8 @@ h1 {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 55px;
+  margin-left: 0px;
+  margin-right: 40px;
 }
 .data-container {
   margin: 0 auto;
@@ -289,9 +296,12 @@ h1 {
 #day {
   width: 160px;
   height: 107px;
+  position: relative;
 }
 
-.name-day {
+.name-day1,
+.name-day2,
+.name-day3 {
   margin: 0;
   width: 160px;
   height: 27px;
@@ -321,14 +331,13 @@ h1 {
   text-align: left;
 }
 
-
-
-
-
-
-
-
-
+.icon-day1,
+.icon-day2,
+.icon-day3 {
+  position: absolute;
+  bottom: 0;
+  left: 90px;
+}
 
 .map-container {
   display: flex;

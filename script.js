@@ -1,5 +1,6 @@
 let dateToday = document.querySelector(".date-today");
-let nextDay = document.querySelector(".name-day");
+let nextDay = document.querySelector(".name-day1");
+
 
 window.onload = function(){
   window.setInterval(function(){
@@ -8,15 +9,16 @@ window.onload = function(){
     clock.innerHTML = now;
   }, 1000);
  };
-
 function dateDay () {
-  let d = new Date().toLocaleString('en', { weekday: 'short', month: 'long', day: 'numeric'});
+  let d = new Date().toLocaleString('en', { weekday: 'long', month: 'long', day: 'numeric'});
    dateToday.textContent = d;
 }
 dateDay();
-
 function nextDateDay () {
-  let n = new Date().toLocaleString('en', {weekday: "long"});
-  nextDay.textContent = n;
+ 
+  let date = new Date();
+  date.setDate(date.getDate() + 1).toLocaleString('en', { weekday: 'long'});
+  nextDay.textContent = date;
+ 
 }
 nextDateDay();
