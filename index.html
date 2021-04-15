@@ -9,6 +9,9 @@
   <title>fancy-weather</title>
 </head>
 <body>
+  <div class="background"></div>
+  <div class="background"></div>
+  <div class="background"></div>
   <header>
     <div class="header-container">
       <div class="left-buttons">
@@ -16,12 +19,12 @@
         <img class="vector" src="/images/Vector.svg" alt="">
         </button>
         <select name="lang-button" id="language">
-          <option>en</option>
+          <option class="lang-en">en</option>
           <option>be</option>
-          <option>ru</option>
+          <option class="lang-ru">ru</option>
         </select>
-        <button class="f-btn">°F</button>
-        <button class="c-btn">°С</button>
+        <button class="btn f-btn">°F</button>
+        <button class="btn c-btn btn-active">°С</button>
       </div>
       <div class="search-field">
         <form>
@@ -47,8 +50,7 @@
       <div class="weather-conteiner">
         <div class="weather-content">
             <p class="icon"></p>
-            <img class="deg" src="/images/°.svg" alt="">
-            <p class="temp">0</p>
+            <p class="temp-today">0</p>
             <div class="overcast">
               <p>overcast</p>
               <p class="feels-like">Feels like: </p>
@@ -63,12 +65,12 @@
               <p class="icon-day1"></p>
             </div>
             <div id="day" class="day2">
-              <p class="name-day2">wednesday</p>
+              <p class="name-day2"></p>
               <p class="temp-day2"></p>
               <p class="icon-day2"></p>
             </div>
             <div id="day" class="day3">
-              <p class="name-day3">thursday</p>
+              <p class="name-day3"></p>
               <p class="temp-day3"></p>
               <p class="icon-day3"></p>
             </div>
@@ -86,7 +88,5 @@
     </section>
   </main>
   <script src="script.js"></script>
-  <script src="index.js"></script>
-  <script src="geo.js"></script>
 </body>
 </html>
